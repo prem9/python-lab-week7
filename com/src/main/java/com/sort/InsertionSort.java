@@ -58,20 +58,7 @@ public class InsertionSort {
     return arr;
   }
 
-  // bubble sort array, O(n^2), unoptimized brute force solution
-  public static void bubbleSort(String[] arr) {
-    for (int i = 0; i < arr.length; i++) {
-      for (int j = 0; j < arr.length; j++) {
-        if (j + 1 < arr.length) {
-          if (arr[j].compareTo(arr[j + 1]) > 0) {
-            swap(arr, j, j + 1);
-          }
-        }
-        // increase count
-        count++;
-      }
-    }
-  }
+  
 
    // bubble sort array, O(n^2), unoptimized brute force solution
    public static void insertionSort(String[] arr) {
@@ -89,19 +76,7 @@ public class InsertionSort {
             }
             arr[j + 1] = key;
         }
-    /*
-    for (int i = 0; i < arr.length; i++) {
-      for (int j = 0; j < arr.length; j++) {
-        if (j + 1 < arr.length) {
-          if (arr[j].compareTo(arr[j + 1]) > 0) {
-            swap(arr, j, j + 1);
-          }
-        }
-        // increase count
-        count++;
-      }
-    }
-    */
+    
   }
 
   // swap
